@@ -1,0 +1,13 @@
+body {
+    color: #fff;
+    background: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Realms | Spellbook Creator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <h1>Spellbook Creator</h1>
+    <section>
+      <p>
+	This Web tool generates a simple OOC Spellbook following the rules in the Omnibus (as of 2021).
+      </p>
+    </section>
+    <main>
+      <form method="POST" action="../cgi-bin/generate_spellbook.cgi">
+	<section>
+	  <div class="input text">
+	    <label>OOC Name:
+	      <input type="text" name="oocname" placeholder="Player Name">
+	    </label>
+	  </div>
+	  <div class="input text">
+	    <label>IC Name:
+	      <input type="text" name="icname" placeholder="Character Name">
+	    </label>
+	  </div>
+	  <div class="input toggle">
+	    <label>
+	      Wears Armor?
+	      <input type="checkbox" name="armor">
+	    </label>
+	  </div>
+	</section>
+	<section>
+	  <button type="submit">Generate</button>
+	</section>
+      </form>
+    </main>
+  </body>
+</html>
+
