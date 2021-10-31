@@ -7,8 +7,11 @@ PUBLIC_HTML=$HOME/public_html
 CGI_BIN=$PUBLIC_HTML/cgi-bin
 
 function replace_with_cgi_symlink() {
-    mv "$1" "$CGI_BIN/$1"
-    ln -s "$CGI_BIN/$1" "$1"
+    file="$1"
+    cgi_bin_location="$CGI_BIN/$1"
+    mv "$file" "$cgi_bin_location"
+    chmod a+x "$cgi_bin_location"
+    ln -s "$cgi_bin_location" "$file"
 }
 
 cd "`dirname $0`"
