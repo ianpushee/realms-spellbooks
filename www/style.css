@@ -11,3 +11,7 @@ input[type="text"] {
     color: white;
     background-color: black;
 }
+
+label.spell-radio {
+    break-inside: avoid;
+}

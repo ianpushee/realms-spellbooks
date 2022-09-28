@@ -1,0 +1,9 @@
+Make spells.py output a pickle file or something (JSON?) with spell data
+
+Import spells into webpage, including autocomplete. Make it so you can just type the next spell, or select by circle and then spell.
+
+Make spellbook output index
+
+Make spellbook output spell descriptions
+
+Maybe make spellbook have "save to PDF" button, not just usual "print page"?
